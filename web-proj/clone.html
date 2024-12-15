@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery website</title>
+    <link rel="stylesheet" href="clone-style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Grocera</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#section1">Fruits</a></li>
+                <li><a href="#section2">Vegetables</a></li>
+                <li><a href="#section3">Dairy</a></li>
+                <li><a href="#section4">Snacks</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="section1" class="product-section">
+            <h2>Fresh Fruits</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://plus.unsplash.com/premium_photo-1663926032043-7908766f5c52?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFwcGxlfGVufDB8fDB8fHww"
+                        alt="Apple">
+                    <h3>Apple</h3>
+                    <p>$2.5 each</p>
+                    <button class="add-to-cart" data-name="Apple" data-price="2.5">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://plus.unsplash.com/premium_photo-1724255994673-c46643147d35?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGluZWFwcGxlJTIwc2xpY2V8ZW58MHx8MHx8fDA%3D"
+                        alt="Apple">
+                    <h3>Pineapple</h3>
+                    <p>$5.5 each</p>
+                    <button class="add-to-cart" data-name="Pineapple" data-price="5.5">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://plus.unsplash.com/premium_photo-1687977548480-bc8208faf8f0?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGNoZXJyeXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Cherry">
+                    <h3>Cherry</h3>
+                    <p>$3.5 each</p>
+                    <button class="add-to-cart" data-name="Cherry" data-price="3.5">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://plus.unsplash.com/premium_photo-1667926862695-629f15968976?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmFuYW5hfGVufDB8fDB8fHww"
+                        alt="Banana">
+                    <h3>Banana</h3>
+                    <p>$1.2 each</p>
+                    <button class="add-to-cart" data-name="Banana" data-price="1.2">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2" class="product-section">
+            <h2>Fresh Vegetables</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://media.istockphoto.com/id/1220226211/photo/homegrown-carrots.webp?a=1&b=1&s=612x612&w=0&k=20&c=QOMpHq9LxPctavo5_dkeixgiR3_Z3w4rCsMuOPypTGg="
+                        alt="Carrot">
+                    <h3>Carrot</h3>
+                    <p>$1.5 each</p>
+                    <button class="add-to-cart" data-name="Carrot" data-price="1.5">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://plus.unsplash.com/premium_photo-1671395501275-630ae5ea02c4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmVnZXRhYmxlfGVufDB8fDB8fHww"
+                        alt="Apple">
+                    <h3>Tomato</h3>
+                    <p>$4.4 each</p>
+                    <button class="add-to-cart" data-name="Tomato" data-price="4.4">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://plus.unsplash.com/premium_photo-1666823706428-5d93ae18c1c0?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHVtcGtpbnxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Pumpkin">
+                    <h3>Pumpkin</h3>
+                    <p>$2.5 each</p>
+                    <button class="add-to-cart" data-name="Pumpkin" data-price="2.5">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://media.istockphoto.com/id/1360836158/photo/broccoli.webp?a=1&b=1&s=612x612&w=0&k=20&c=Kd6eDGRF8d_lgv3SMf-7OYxcaG1nCmGOj3cIAwI0_HY="
+                        alt="Broccoli">
+                    <h3>Broccoli</h3>
+                    <p>$2.0 each</p>
+                    <button class="add-to-cart" data-name="Broccoli" data-price="2.0">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3" class="product-section">
+            <h2>Dairy Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1529258283598-8d6fe60b27f4?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1pbGt8ZW58MHx8MHx8fDA%3D"
+                        alt="Milk">
+                    <h3>Milk</h3>
+                    <p>$1.8 per liter</p>
+                    <button class="add-to-cart" data-name="Milk" data-price="1.8">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://plus.unsplash.com/premium_photo-1664640733898-d5c3f71f44e1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YnJlYWR8ZW58MHx8MHx8fDA%3D"
+                        alt="Bread">
+                    <h3>Bread</h3>
+                    <p>$0.5 each</p>
+                    <button class="add-to-cart" data-name="Bread" data-price="0.5">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://plus.unsplash.com/premium_photo-1690214491960-d447e38d0bd0?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FrZXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Cake">
+                    <h3>Cake</h3>
+                    <p>$4.7 each</p>
+                    <button class="add-to-cart" data-name="Cake" data-price="4.7">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://plus.unsplash.com/premium_photo-1687975124229-e3ae49ea2c20?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2hlZXNlfGVufDB8fDB8fHww"
+                        alt="Cheese">
+                    <h3>Cheese</h3>
+                    <p>$3.0 per block</p>
+                    <button class="add-to-cart" data-name="Cheese" data-price="3.0">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="section4" class="product-section">
+            <h2>Snacks</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://plus.unsplash.com/premium_photo-1672753747124-2bd4da9931fa?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hpcHN8ZW58MHx8MHx8fDA%3D"
+                        alt="Chips">
+                    <h3>Chips</h3>
+                    <p>$1.5 per pack</p>
+                    <button class="add-to-cart" data-name="Chips" data-price="1.5">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1528316746172-63793f15de39?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBpbmVhcHBsZSUyMHNhbGFkfGVufDB8fDB8fHww"
+                        alt="Apple">
+                    <h3>Dessert</h3>
+                    <p>$3.6 each</p>
+                    <button class="add-to-cart" data-name="Dessert" data-price="3.6">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1501747188-61c00b3d8ba0?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNuYWNrc3xlbnwwfHwwfHx8MA%3D%3D"
+                        alt="choco lava">
+                    <h3>Macaron</h3>
+                    <p>$3.9 each</p>
+                    <button class="add-to-cart" data-name="Macarons" data-price="3.9">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://plus.unsplash.com/premium_photo-1670895802275-ed748ced4309?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29va2llc3xlbnwwfHwwfHx8MA%3D%3D"
+                        alt="Cookies">
+                    <h3>Cookies</h3>
+                    <p>$2.0 per pack</p>
+                    <button class="add-to-cart" data-name="Cookies" data-price="2.0">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <a href="clone-info.html">
+                <button id="place-order">Place Order</button>
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><span> <p>Follow us:</p>
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="data:image/png;base64,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" alt="Facebook" style="width: 24px; margin: 0 5px;">
+            </a>
+            <a href="https://www.telegram.org" target="_blank">
+              <img src="data:image/jpeg;base64,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" alt="Twitter" style="width: 24px; margin: 0 5px;">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGs1LETqnEyuX9xvRmPjHK7ulEtLeXSpYLHQ&s" alt="Twitter" style="width: 24px; margin: 0 5px;">
+              </a>
+            </span>© 2024 Grocery Store. All rights reserved.</p>
+    </footer>
+
+    <script src="clone-script.js"></script>
+
+</body>
+
+</html>
